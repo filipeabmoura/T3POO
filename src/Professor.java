@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
-public class Professor extends Pessoa {
+public class Professor extends Pessoa implements Salvavel {
 
     //atributos
 
