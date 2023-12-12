@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 /**
  * Classe principal
  * @author Hilario Seibel Junior
@@ -9,6 +11,8 @@ public class Main {
 
         Entrada io = new Entrada();
         Sistema s = new Sistema();
+
+        ComparaTurma compT = new ComparaTurma();
 
         int op = io.menu1();
 
@@ -49,6 +53,10 @@ public class Main {
                 //cadastro da turma
             }
             if (op == 4) {
+
+                //ordena lista de turmas
+                Collections.sort(s.getTurmas(), compT);
+
                 //imprime notas de cada turma
                 for (Turma t : s.getTurmas()){
 

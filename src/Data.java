@@ -1,4 +1,4 @@
-public class Data {
+public class Data implements Comparable<Data>{
 
     //atributos
 
@@ -16,21 +16,24 @@ public class Data {
 
     //metodos
 
-    public boolean posterior(Data d2){
+    public int compareTo(Data d2){
+
         if(this.ano > d2.getAno()){
-            return true;
+            return 1;
         }else if(this.ano < d2.getAno()){
-            return false;
+            return -1;
         }else{
             if(this.mes > d2.getMes()){
-                return true;
+                return 1;
             }else if(this.mes < d2.getMes()){
-                return false;
+                return -1;
             }else{
                 if(this.dia > d2.getDia()){
-                    return true;
+                    return 1;
+                } else if(this.dia < d2.getDia()){
+                    return -1;
                 } else{
-                    return false;
+                    return 0;
                 }
             }
         }

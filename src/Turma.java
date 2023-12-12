@@ -61,4 +61,28 @@ public class Turma {
 
     }
 
+    //getters
+    public String getNome() {
+        return this.nome;
+    }
+
+    public int getAno() {
+        return this.ano;
+    }
+
+    public int getSem() {
+        return this.sem;
+    }
+
+    public Professor getProf() {
+        return this.prof;
+    }
+
+    public Aluno[] getAlunos() {
+        return this.alunos;
+    }
+
+    public Avaliacao[] getAvs() {
+        return this.avs;
+    }
 }

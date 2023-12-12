@@ -23,7 +23,7 @@ public class AlunoTrab {
         
         double notaTotal = this.nota; //nota total inicialmente zerada
         
-        if(this.dtEntrega.posterior(prazo)){
+        if(this.dtEntrega.compareTo(prazo) > 0){
             
             return this.nota * 0.8; //retorna 80% da nota avaliada por atraso
         }else{

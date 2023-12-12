@@ -1,16 +1,18 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
-public class Sistema {
+public class Sistema{
 
     //atributos
 
     private int nProfs;
     private int nAlunos;
     private int nTurmas;
-    private ArrayList<Professor> profs;
-    private ArrayList<Aluno> alunos;
-    private ArrayList<Turma> turmas;
+    private List<Professor> profs;
+    private List<Aluno> alunos;
+    private List<Turma> turmas;
 
     //construtor
 
@@ -202,7 +204,7 @@ public class Sistema {
 
 
     //getters
-    public ArrayList<Turma> getTurmas() {
+    public List<Turma> getTurmas() {
         return this.turmas;
     }
 
