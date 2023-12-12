@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     //atributos
 
@@ -25,10 +25,9 @@ public class Pessoa {
 
     //metodos
 
-    public String toString(){
+    public abstract String toString();
 
-        return this.nome + " (CPF: " + this.cpf + ")";
-    }
+
 
     //getters
 

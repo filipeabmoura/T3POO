@@ -26,6 +26,11 @@ public class Professor extends Pessoa {
 
     //metodos
 
+    public String toString(){
+
+        return this.nome + " (CPF: " + this.cpf + ")";
+    }
+
     public void salvarArquivo(BufferedWriter b) throws IOException {
 
         b.write(this.nome + "\n");

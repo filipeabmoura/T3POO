@@ -1,4 +1,4 @@
-public class Avaliacao {
+public abstract class Avaliacao {
 
     //atributos
 
@@ -17,9 +17,6 @@ public class Avaliacao {
 
     //metodos
 
-    public double nota(int index){
-
-        return -1; //retorna valor qualquer
-    }
+    public abstract double nota(int index);
 
 }
