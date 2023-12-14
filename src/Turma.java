@@ -45,7 +45,7 @@ public class Turma {
             }
 
 
-            AlunoT al = new AlunoT(i, somaNotas, this.alunos[i].getCpf());  //cria novo alunoT com indice, nota total e cpf
+            AlunoT al = new AlunoT(i, somaNotas, this.alunos[i].getMat());  //cria novo alunoT com indice, nota total e cpf
 
             boolean podeAdd = true; //inicialmente pode add o aluno no arraylist
 
@@ -102,6 +102,7 @@ public class Turma {
         }
 
         System.out.println("Média da turma: " + somaTodaTurma/this.alunos.length);
+        System.out.printf("\n");
 
     }
 

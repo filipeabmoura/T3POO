@@ -3,14 +3,14 @@ public class AlunoT implements Comparable<AlunoT> {
     //atributos
     private int index;
     private double nota;
-    private String cpf;
+    private String mat;
 
     //construtor
-    public AlunoT(int index, double nota, String cpf){
+    public AlunoT(int index, double nota, String mat){
 
         this.index = index;
         this.nota = nota;
-        this.cpf = cpf;
+        this.mat = mat;
     }
 
     //metodo
@@ -22,7 +22,7 @@ public class AlunoT implements Comparable<AlunoT> {
         }else if (this.nota < a2.getNota()){
             return 1;
         }else{ //se notas sao iguais, compara pelo cpf
-            return this.cpf.compareTo(a2.getCpf());
+            return this.mat.compareTo(a2.getMat());
         }
     }
 
@@ -35,7 +35,7 @@ public class AlunoT implements Comparable<AlunoT> {
         return this.nota;
     }
 
-    public String getCpf() {
-        return this.cpf;
+    public String getMat() {
+        return this.mat;
     }
 }
